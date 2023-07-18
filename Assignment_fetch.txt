@@ -1,0 +1,42 @@
+Cluster name: BuyObline
+
+Topic name: Product_Updates
+
+-----------------Table-------------
+
+create table Product_updates
+  (
+    id int,
+    name varchar(50),
+    category varchar(100),
+    price float,
+    last_updated timestamp
+  );
+
+-----------kafka producer----------
+
+Create Topic in kafka in with 10 partation
+
+Id is the key for the producing messages
+
+Update the last read timestamp after each:
+          print('successful fetch')
+
+---------kafka consumer group and data transformation-------------
+
+kafka consumar: group of 5 consumers
+
+Apply some business logic to update the price column, such as
+applying a discount if a particular product falls under a specific
+category.
+
+------------write transformed data to the json file--------------
+write transformned to the json files
+
+
+-------------deliverables---------
+
+
+
+
+
